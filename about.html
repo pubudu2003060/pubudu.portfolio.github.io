@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Pubudu Madushan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 selection:bg-blue-200">
+  <!-- Header -->
+  <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600 tracking-tight">Pubudu Madushan</div>
+      <nav>
+        <button id="menu-btn" class="block md:hidden text-gray-600 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-6 items-center">
+          <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Home</a></li>
+          <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">About</a></li>
+          <li><a href="projects.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Projects</a></li>
+          <li><a href="blog.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Blog</a></li>
+          <li><a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors font-semibold">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
+      <ul class="px-4 pt-2 pb-4 space-y-2">
+        <li><a href="index.html" class="block px-3 py-2 hover:bg-blue-50 rounded-md text-gray-700">Home</a></li>
+        <li><a href="about.html" class="block px-3 py-2 hover:bg-blue-50 rounded-md text-gray-700">About</a></li>
+        <li><a href="projects.html" class="block px-3 py-2 hover:bg-blue-50 rounded-md text-gray-700">Projects</a></li>
+        <li><a href="blog.html" class="block px-3 py-2 hover:bg-blue-50 rounded-md text-gray-700">Blog</a></li>
+        <li><a href="resume.html" class="block px-3 py-2 hover:bg-blue-50 rounded-md text-gray-700">Resume</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 bg-blue-500 text-white rounded-md">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="container mx-auto px-4 pt-32 pb-16">
+    <div class="max-w-4xl mx-auto animate-fade-in">
+      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">About Me</h2>
+      
+      <!-- Profile Introduction -->
+      <div class="bg-white rounded-xl shadow-md p-8 mb-10 hover-lift">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Hello, I'm Pubudu Madushan</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          A passionate Software Engineering student based in Colombo, Sri Lanka, with a deep love for creating innovative web applications and exploring cutting-edge technologies. My journey is driven by a curiosity to solve complex problems and build scalable, user-centric solutions.
+        </p>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white rounded-xl shadow-md p-6 hover-lift">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Programming Languages</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Java</li>
+            <li>• JavaScript</li>
+            <li>• HTML/CSS</li>
+            <li>• Python</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 hover-lift">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Frameworks & Libraries</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Spring Boot</li>
+            <li>• React</li>
+            <li>• Tailwind CSS</li>
+            <li>• Node.js</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 hover-lift">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Cloud & DevOps</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• AWS</li>
+            <li>• Azure</li>
+            <li>• Docker</li>
+            <li>• GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education & Experience -->
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-white rounded-xl shadow-md p-6 hover-lift">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-600">Education</h3>
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold text-gray-800">University of Kelaniya</h4>
+              <p class="text-gray-600">BSc(Hons) Software Engineering</p>
+              <p class="text-sm text-gray-500">2021 - Present</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Relevant Coursework</h4>
+              <ul class="text-gray-700 text-sm">
+                <li>• Web Development</li>
+                <li>• Cloud Computing</li>
+                <li>• Software Architecture</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 hover-lift">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-600">Work Experience</h3>
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold text-gray-800">Brown & Company PLC</h4>
+              <p class="text-gray-600">Software Development Intern</p>
+              <p class="text-sm text-gray-500">Jan 2024 - Mar 2024</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Key Responsibilities</h4>
+              <ul class="text-gray-700 text-sm">
+                <li>• IoT Solution Development</li>
+                <li>• Application Prototyping</li>
+                <li>• Collaborative Project Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 italic">
+        <p class="text-lg text-gray-700">
+          "Pubudu is a highly skilled and motivated individual, always ready to take on new challenges and deliver innovative solutions."
+        </p>
+        <p class="text-sm text-gray-600 mt-2">– Mentor at Brown & Company PLC</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-lg font-semibold mb-4 md:mb-0">© 2025 Pubudu Madushan</div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
